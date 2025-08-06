@@ -1,0 +1,28 @@
+# Ignore Python virtual environments
+venv/
+chatbot/
+
+# Ignore system files
+.DS_Store
+
+# Ignore Python bytecode and cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore model checkpoints, logs, datasets, and temp files
+*.ckpt
+*.pt
+*.pkl
+*.log
+*.tmp
+
+# Ignore large libraries and compiled shared objects
+*.so
+*.dylib
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/

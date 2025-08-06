@@ -1,0 +1,7 @@
+langchain
+#faiss-cpu
+chromadb
+sentence-transformers
+pypdf
+ollama
+streamlit

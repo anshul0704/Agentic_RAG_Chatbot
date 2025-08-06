@@ -1,0 +1,30 @@
+rag_langchain/
+├── data/
+│   └── refund_policy.pdf
+├── embeddings/
+│   └── faiss_index + docs.pkl
+├── ingest.py       ← Load + chunk + embed + save
+├── rag_chain.py    ← Ask question → retrieve → call LLM
+├── app.py          ← (Optional UI)
+
+
+rag_pdf_chatbot/
+│
+├── data/                       ← 📄 All PDF files go here
+│   └── refund_policy.pdf
+│
+├── embeddings/                ← 💾 FAISS index and text chunks
+│   ├── faiss_index
+│   └── docs.pkl
+│
+├── ingest.py                  ← 🔁 One-time script to load PDFs, chunk, embed, save
+│
+├── rag_chain.py               ← 🤖 Core chatbot logic (retrieve context + query LLM)
+│
+├── chat_terminal.py           ← 🖥️ Run chatbot from terminal
+│
+├── app.py                     ← 🌐 (Optional) Streamlit or Flask web UI
+│
+├── requirements.txt           ← 📦 List of Python dependencies
+│
+└── README.md                  ← 📘 Project overview and instructions
