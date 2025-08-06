@@ -21,6 +21,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 from rag_chain import generate_answer  # Your existing function
+from chains.agent_chain import run_agent  # If you want to use the agent chain
 
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
 
@@ -31,5 +32,6 @@ query = st.text_input("Ask your question:", placeholder="e.g. What is the docume
 
 if query:
     with st.spinner("Thinking..."):
-        answer = generate_answer(query)
+        #answer = generate_answer(query)
+        answer= run_agent(query)
         st.success(answer)

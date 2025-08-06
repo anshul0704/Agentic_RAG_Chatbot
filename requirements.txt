@@ -5,3 +5,5 @@ sentence-transformers
 pypdf
 ollama
 streamlit
+duckduckgo-search
+langchain-experimental
